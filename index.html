@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE BAD</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <!-- expand-lg: will show a hamburger menu on small size
+    bg-dark: background dark
+    nav-dark: text light fixed-top can be used -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
+        <div class="container">
+            <a href="#" class="navbar-brand mb-0 h1">The Breaking Bad.</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                <!-- adds a button, expands data when pressed, data targeted is under navmenu -->
+                <span class="navbar-toggler-icon"></span>
+                <!-- adds the icon -->
+            </button>
+            <div class="collapse navbar-collapse" id="navmenu">
+                <!-- for the hamburger menu -->
+                <ul class="navbar-nav ms-auto">
+                    <!-- ms-auto: margin start auto -->
+                    <li class="nav-item">
+                        <a href="#cancer" class="nav-link">Fight Cancer</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#questions" class="nav-link">Questions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#instructors" class="nav-link">Instructors</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <!-- HOME -->
+    <section class="bg-dark text-light p-5 text-center text-sm-start">
+        <!-- background dark, text light, padding 5(all)(pt-top pb-bottom px py), text center on mobile screens-->
+        <div class="container">
+            <div class="d-sm-flex align-items-center justify-content">
+                <!-- styles to flex-box for large and med screens -->
+                <div>
+                    <h1>The<span class="text-warning">
+                            Heisenberg
+                        </span> Project.</h1>
+                    <p class="lead my-4">
+                        <!-- margin on the y-axis is 4 -->
+                        You clearly don’t know who you’re talking to, so let me clue you in. I am not in danger, Skyler.
+                        I am the danger. A guy opens his door and gets shot, and you think that of me? No! I am the one
+                        who knocks!
+                    </p>
+                    <button class="btn btn-primary btn-lg">Join the Empire</button>
+                    <!-- btn-primary:blue, large -->
+                </div>
+                <img class="img-fluid w-50 d-sm-block" src="img/heisenberg.svg" alt="">
+                <!-- adds img in a container and sets width to 50%, doesnt show on small screens -->
+            </div>
+        </div>
+    </section>
+
+    <!-- SIGNUP -->
+    <section class="bg-primary text-light p-5">
+        <div class="container">
+            <div class="row mb-3 mb-md-0 justify-content-between align-items-center">
+                <div class="col-md-6">
+                    <h3 class="mb-3 mb-md-0">Signup For Deals</h3>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Enter Email">
+                        <button class="btn btn-dark btn-lg" type="button" id="button-addon2">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CHARACTERS -->
+    <section class="p-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md">
+                    <div class="card bg-warning text-dark mb-5">
+                        <div class="card-body text-center">
+                            <div class="h1 mb-3">
+                                <i class="bi bi-yin-yang"></i>
+                            </div>
+                            <h3 class="card-title mb-3">
+                                THE GOOD
+                            </h3>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio quas numquam,
+                                debitis a in sequi nisi minima consectetur animi dolorem esse adipisci consequatur
+                                repellendus tempore optio quod possimus corporis rem!
+                            </p>
+                            <a href="#" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="card bg-dark text-light mb-5">
+                        <div class="card-body text-center">
+                            <div class="h1 mb-3">
+                                <i class="bi bi-yin-yang"></i>
+                            </div>
+                            <h3 class="card-title mb-3">
+                                THE BAD
+                            </h3>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio quas numquam,
+                                debitis a in sequi nisi minima consectetur animi dolorem esse adipisci consequatur
+                                repellendus tempore optio quod possimus corporis rem!
+                            </p>
+                            <a href="#" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="card bg-warning text-dark">
+                        <div class="card-body text-center">
+                            <div class="h1 mb-3">
+                                <i class="bi bi-yin-yang"></i>
+                            </div>
+                            <h3 class="card-title mb-3">
+                                THE UGLY
+                            </h3>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio quas numquam,
+                                debitis a in sequi nisi minima consectetur animi dolorem esse adipisci consequatur
+                                repellendus tempore optio quod possimus corporis rem!
+                            </p>
+                            <a href="#" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="p-5">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-md">
+                    <img src="img/breaking bad.svg" class="img-fluid" alt="">
+                </div>
+                <div class="col-md p-5">
+                    <h2>About</h2>
+                    <p class="lead">
+                        Yo, welcome to the baddest Breaking Bad fan zone, where we cook up the deets hotter than Walter
+                        White's blue stuff. Get ready to dive deep into the Albuquerque underworld, where chemistry
+                        teacher turned meth kingpin Walter White and his partner in crime, Jesse Pinkman, break all the
+                        rules. From RV cook sessions to epic showdowns with the law, we're your one-stop shop for all
+                        things Heisenberg. So grab your hazmat suit, buckle up, and join us on this wild ride through
+                        the highs and lows of the crystal-clear chaos. It's not just a website; it's a Breaking Bad
+                        obsession. Say my name, baby!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- JOIN THE CLUB -->
+    <section id="cancer" class="p-5 bg-black text-light">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-md p-5">
+                    <h2>Fight Cancer</h2>
+                    <p class="lead">
+                        Yo, welcome to the baddest Breaking Bad fan zone, where we cook up the deets hotter than Walter
+                        White's blue stuff. Get ready to dive deep into the Albuquerque underworld, where chemistry
+                        teacher turned meth kingpin Walter White and his partner in crime, Jesse Pinkman, break all the
+                        rules. From RV cook sessions to epic showdowns with the law, we're your one-stop shop for all
+                        things Heisenberg. So grab your hazmat suit, buckle up, and join us on this wild ride through
+                        the highs and lows of the crystal-clear chaos. It's not just a website; it's a Breaking Bad
+                        obsession. Say my name, baby!
+                    </p>
+                </div>
+                <div class="col-md">
+                    <img src="img/cancer.svg" class="img-fluid w-50" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- QUESTIONS -->
+    <section id="questions" class="question p-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Frequently Asked Questions</h2>
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            <strong>Is it legal? What if police shows up at my door?</strong>
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <strong>This is the first item's accordion body.</strong> It is shown by default, until the
+                            collapse plugin adds the appropriate classes that we use to style each element. These
+                            classes control the overall appearance, as well as the showing and hiding via CSS
+                            transitions. You can modify any of this with custom CSS or overriding our default variables.
+                            It's also worth noting that just about any HTML can go within the
+                            <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            <strong>How good is the quality? Will I get the good stuff?</strong>
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <strong>This is the second item's accordion body.</strong> It is hidden by default, until
+                            the collapse plugin adds the appropriate classes that we use to style each element. These
+                            classes control the overall appearance, as well as the showing and hiding via CSS
+                            transitions. You can modify any of this with custom CSS or overriding our default variables.
+                            It's also worth noting that just about any HTML can go within the
+                            <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            <strong>What is meth? What is this website about?</strong>
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            No idea, bro.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- INSTRUCTORS -->
+    <section id="instructors" class="p-5 bg-black">
+        <div class="container">
+            <h2 class="text-center text-white">Our Instructors</h2>
+            <p class="lead text-center text-white mb-5">
+                with experience.
+            </p>
+            <div class="row g-3">
+                <div class="col-md-4">
+                    <div class="card bg-danger">
+                        <div class="card-body text-center">
+                            <img src="/img/WALTER.png" class="rounded-circle img-fluid h-50" alt="">
+                            <h3 class="card-title mb-3">Walter White</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card bg-danger">
+                        <div class="card-body text-center">
+                            <img src="/img/JESSE.png" class="rounded-circle img-fluid h-50" alt="">
+                            <h3 class="card-title mb-3">Jesse Pinkman</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card bg-danger">
+                        <div class="card-body text-center">
+                            <img src="/img/SAUL.png" class="rounded-circle img-fluid h-50" alt="">
+                            <h3 class="card-title mb-3">Saul Goodman</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="p-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md">
+                    <h2 class="text-center mb-4">Contact Info</h2>
+                    <ul class="list-group list-group-flush lead">
+                        <li class="list-group-item">
+                            <span class="fw-bold">Location:</span> Albuquerque, New Mexico
+                        </li>
+                        <li class="list-group-item">
+                            <span class="fw-bold">Contact:</span> contact@breakingbad.com
+                        </li>
+                        <li class="list-group-item">
+                            <span class="fw-bold">Legal:</span> itsallgoodman@breakingbad.com
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="p-5 bg-dark text-white text-center position-relative">
+        <div class="container">
+            <p class="lead">Copyright &copy; The Breaking Bad</p>
+            <a href="#" class="postion-absolute bottom-0 end-0 p-5">
+                <i class="bi bi-arrow-up-circle h1 me-0"></i>
+            </a>
+        </div>
+    </footer>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js">
+    </script>
+</body>
+
+</html>
